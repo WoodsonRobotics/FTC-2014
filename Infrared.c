@@ -11,7 +11,7 @@
 #define monkey joystick
 #define Left joy1_y1
 #define Right joy1_y2
-#define fag 50
+#define power 50
 
 
 
@@ -163,8 +163,8 @@ while (1==1)
 }
 
 void armraise () {
-	motor[arm] = fag;
-	motor[arm2] = fag;
+	motor[arm] = power;
+	motor[arm2] = power;
 	wait1Msec(1000);
 	motor[arm] = 0;
 	motor[arm2] = 0;

@@ -41,15 +41,15 @@ task main()
 		if ( joy1Btn(6) ==  1)
 		{
 
-			motor[arm] = -85;
-			motor[arm2] = -85;
+			motor[arm] = power;
+			motor[arm2] = power;
 
 		}
 		if ( joy1Btn(5) ==  1)
 		{
 
-			motor[arm] = 85;
-			motor[arm2] = 85;
+			motor[arm] = power;
+			motor[arm2] = power;
 
 		}
 		else
