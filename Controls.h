@@ -18,8 +18,14 @@
 #define waitTime 1000
 #define noPower 0
 #define print nxtDisplayTextLine
-#define buttonPress(x) if ( x ==  1)
-
+#define buttonPressed(x) if ( x ==  1)
+#define up 1
+#define down -1
+#define Hello_my_name_is_Chris_Issing_and_this_is_my_main_function task main()
+#define This_is_the_code_that_is_going_to_be_run_in_a_loop while(true)
+#define This_line_configures_the_joystick getJoystickSettings(joystick);
+#define This_line_sets_the_power_of_the_left_motor_to_the_the_value_of_the_left_analog_stick motor[leftwheel] = joystick.Left;
+#define And_this_line_sets_the_power_of_the_right_motor_to_the_the_value_of_the_right_analog_stick motor[rightwheel] = joystick.Right;
 /*--------------INCLUDES---------------*/
 #include "JoystickDriver.c"
 
