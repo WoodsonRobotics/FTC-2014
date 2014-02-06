@@ -26,6 +26,7 @@
 #define This_line_configures_the_joystick getJoystickSettings(joystick);
 #define This_line_sets_the_power_of_the_left_motor_to_the_the_value_of_the_left_analog_stick motor[leftwheel] = joystick.Left;
 #define And_this_line_sets_the_power_of_the_right_motor_to_the_the_value_of_the_right_analog_stick motor[rightwheel] = joystick.Right;
+#define This_sets
 /*--------------INCLUDES---------------*/
 #include "JoystickDriver.c"
 
@@ -50,4 +51,5 @@ void claw (int num)
 void beep()
 {
 	PlayTone(42,42);
+
 }

@@ -20,33 +20,33 @@ Hello_my_name_is_Chris_Issing_and_this_is_my_main_function
 
 	buttonPressed(LeftTrigger)
 	{
-	print(5, "Claw opening...");
-			claw(up);
-		}
-		buttonPressed(RightTrigger)
-		{
-			print(5, "Claw closing...");
-			claw(down);
-		}
-		buttonPressed(RightButton)
-		{
-			print(5,"Arm raising...");
-			motor[arm] = power;
-			motor[arm2] = power;
-		}
-		buttonPressed(LeftButton)
-		{
-			print(5,"Arm descending...");
-			motor[arm] = -power;
-			motor[arm2] = -power;
-		}
-		else
-		{
-			motor[arm] = noPower;
-			motor[arm2] = noPower;
-			print(5,"");
-			ClearSounds();
-		}
+		print(5, "Claw opening...");
+		claw(up);
+	}
+	buttonPressed(RightTrigger)
+	{
+		print(5, "Claw closing...");
+		claw(down);
+	}
+	buttonPressed(RightButton)
+	{
+		print(5,"Arm raising...");
+		motor[arm] = power;
+		motor[arm2] = power;
+	}
+	buttonPressed(LeftButton)
+	{
+		print(5,"Arm descending...");
+		motor[arm] = -power;
+	  motor[arm2] = -power;
+	}
+			else
+	{
+		motor[arm] = noPower;
+		motor[arm2] = noPower;
+		print(5,"");
+		ClearSounds();
+	}
 
 	}
 
